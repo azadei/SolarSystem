@@ -21,6 +21,23 @@ body {
    align-items: center;
 }
 
+.pluto-container {
+   position: absolute;
+   height: 950px;
+   width: 950px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;
+}
+
+.pluto-container > img{
+   height: 12px;
+   width: 12px;
+   animation: pluto-rotation 70s linear infinite;
+}
+
 .neptune-container {
    position: absolute;
    height: 850px;
@@ -175,6 +192,16 @@ animation: neptune-rotation 53.9s linear infinite;
    pointer-events: none;
 }
 
+@keyframes pluto-rotation {
+
+   0% {
+      transform: rotate(0deg) translate(475px) rotate(0deg);
+   }
+   
+   100% {
+      transform: rotate(360deg) translate(475px) rotate(360deg);
+    }
+   }
 
 @keyframes neptune-rotation {
     
